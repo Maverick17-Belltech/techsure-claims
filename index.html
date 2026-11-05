@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSure – Claims & Returns Support</title>
+  <style>
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:#1f2937; background:#f5f7fb; }
+    header { background:#0b3d91; color:#fff; padding:18px 32px; display:flex; justify-content:space-between; align-items:center; }
+    header .logo { font-size:24px; font-weight:bold; letter-spacing:1px; }
+    header nav a { color:#dbe6ff; margin-left:20px; text-decoration:none; font-size:14px; }
+    .hero { background:linear-gradient(135deg,#0b3d91,#1f6feb); color:#fff; padding:56px 32px; }
+    .hero h1 { margin:0 0 12px; font-size:34px; }
+    .hero p { margin:0; font-size:18px; max-width:640px; }
+    main { max-width:1000px; margin:32px auto; padding:0 24px; }
+    .cards { display:flex; flex-wrap:wrap; gap:20px; }
+    .card { flex:1 1 280px; background:#fff; border-radius:10px; padding:22px; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+    .card h3 { margin-top:0; color:#0b3d91; }
+    .call { margin-top:28px; background:#fff; border-left:6px solid #1f6feb; border-radius:10px; padding:22px; }
+    .call h2 { margin-top:0; color:#0b3d91; }
+    table { border-collapse:collapse; width:100%; margin-top:10px; font-size:14px; }
+    th, td { border:1px solid #d6dbe6; padding:8px; text-align:left; }
+    th { background:#eef2fb; }
+    footer { text-align:center; font-size:12px; color:#6b7280; padding:24px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TechSure</div>
+    <nav><a href="#">Products</a><a href="#">Warranty</a><a href="#">Support</a></nav>
+  </header>
+
+  <section class="hero">
+    <h1>Claims & Returns Support</h1>
+    <p>Damaged or faulty device? Talk to Tessa, our virtual assistant, 24/7 in English or Spanish. Use the call button at the bottom right of this page.</p>
+  </section>
+
+  <main>
+    <div class="cards">
+      <div class="card"><h3>Open a claim</h3><p>Report a damaged or faulty product and get your claim number right away.</p></div>
+      <div class="card"><h3>Track your claim</h3><p>Check the status, tracking number and next steps of your open claims.</p></div>
+      <div class="card"><h3>Update or cancel</h3><p>Update contact details or tracking by voice or with a secure online form, or cancel an eligible claim.</p></div>
+    </div>
+
+    <div class="call">
+      <h2>Talk to Tessa</h2>
+      <p>Click the phone button at the bottom right and allow microphone access. Tessa will verify your identity with your order number, postal code and phone number.</p>
+      <table>
+        <tr><th>Phone</th><th>Order number</th><th>Postal code</th></tr>
+        <tr><td>+14155550102</td><td>ORD-100002</td><td>10001</td></tr>
+        <tr><td>+49301234567</td><td>ORD-100001</td><td>94105</td></tr>
+        <tr><td>+61412345678</td><td>ORD-100003</td><td>60601</td></tr>
+      </table>
+      <p style="font-size:13px;color:#6b7280;">Demo test credentials. Sample claims for ORD-100002: C-103499, C-886743 (active), C-906023 (closed).</p>
+    </div>
+  </main>
+
+  <footer>TechSure is a fictional company used for the NiCE Cognigy Capstone Project (Use Case 3) · Built by Belltech</footer>
+
+  <script src="https://github.com/Cognigy/click-to-call-widget/releases/latest/download/webRTCWidget.js"></script>
+  <script>
+    addEventListener("load", (event) => {if (window.initWebRTCWidget) {window.initWebRTCWidget("https://endpoint-trial.cognigy.ai/aa07730a77d25d193edde9a90d741ce0ba36ba2c34c1aab8b2b09793f092d761")}});
+  </script>
+</body>
+</html>
